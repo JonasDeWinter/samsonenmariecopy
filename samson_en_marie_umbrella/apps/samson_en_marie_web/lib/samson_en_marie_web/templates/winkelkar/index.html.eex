@@ -1,0 +1,26 @@
+<h1>Listing Winkelkarren</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Winkelkar</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for winkelkar <- @winkelkarren do %>
+    <tr>
+      <td><%= winkelkar.id %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.winkelkar_path(@conn, :show, winkelkar) %></span>
+        <span><%= link "Edit", to: Routes.winkelkar_path(@conn, :edit, winkelkar) %></span>
+        <span><%= link "Delete", to: Routes.winkelkar_path(@conn, :delete, winkelkar), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Winkelkar", to: Routes.winkelkar_path(@conn, :new) %></span>

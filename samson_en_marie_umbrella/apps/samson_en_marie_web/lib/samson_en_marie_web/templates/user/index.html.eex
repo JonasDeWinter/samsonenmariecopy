@@ -1,0 +1,46 @@
+<h1><%= gettext "Listing users" %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= gettext "first name" %></th>
+      <th><%= gettext "last name" %></th>
+      <th><%= gettext "email" %></th>
+      <th><%= gettext "password" %></th>
+      <th><%= gettext "country" %></th>
+      <th><%= gettext "city" %></th>
+      <th><%= gettext "postal code" %></th>
+      <th><%= gettext "street" %></th>
+      <th><%= gettext "home number" %></th>
+      <th><%= gettext "role" %></th>
+      <th><%= gettext "validated?" %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.voornaam %></td>
+      <td><%= user.achternaam %></td>
+      <td><%= user.email %></td>
+      <td><%= user.hashed_password %></td>
+      <td><%= user.land %></td>
+      <td><%= user.stad %></td>
+      <td><%= user.postcode %></td>
+      <td><%= user.straat %></td>
+      <td><%= user.huisnr %></td>
+      <td><%= user.role %></td>
+      <td><%= user.validated %></td>
+      <td><span><%= link gettext("valideer user"), to: Routes.user_path(@conn, :validate_manueel, %{id: user.id}) %></span></td>
+      <td>
+        <span><%= link gettext("Show"), to: Routes.user_path(@conn, :show, user) %></span>
+        <span><%= link gettext("Edit"), to: Routes.user_path(@conn, :edit, user) %></span>
+        <span><%= link gettext("Delete"), to: Routes.user_path(@conn, :delete, user), method: :delete, data: [confirm: gettext "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link gettext("New User"), to: Routes.user_path(@conn, :new) %></span>
+<span><%= link gettext("get api key"), to: Routes.user_path(@conn, :create_key) %></span>

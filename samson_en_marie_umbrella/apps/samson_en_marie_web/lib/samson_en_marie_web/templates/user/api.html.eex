@@ -1,0 +1,2 @@
+<h1>uw key is </h1>
+<h1> <%= @api_key %> </h1>

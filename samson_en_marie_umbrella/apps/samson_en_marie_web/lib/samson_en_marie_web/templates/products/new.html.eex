@@ -1,0 +1,17 @@
+<h1><%= gettext "New Product"%></h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.products_path(@conn, :create)) %>
+
+
+<%= form_for @changeset, Routes.products_path(@conn, :create_file), [multipart: true], fn f -> %>
+  <div class="form-group">
+    <%= label f, gettext "File" %>
+    <%= file_input f, :file, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<span><%= link gettext("Back"), to: Routes.products_path(@conn, :index) %></span>

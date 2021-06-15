@@ -1,0 +1,86 @@
+<h1><%= gettext "Listing Products"%></h1>
+
+<%= form_for @conn, Routes.products_path(@conn, :show_minimum_prijs), fn f -> %>
+  <div class="form-group">
+    <%= label f, gettext "Minimum prijs" %>
+    <%= text_input f, :prijs %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= form_for @conn, Routes.products_path(@conn, :show_maximum_prijs), fn f -> %>
+  <div class="form-group">
+    <%= label f, gettext "Maximu prijs" %>
+    <%= text_input f, :prijs %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= form_for @conn, Routes.products_path(@conn, :show_naam), fn f -> %>
+  <div class="form-group">
+    <%= label f, gettext "naam" %>
+    <%= text_input f, :naam %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= form_for @conn, Routes.products_path(@conn, :show_maat), fn f -> %>
+  <div class="form-group">
+    <%= label f, gettext "maat" %>
+    <%= text_input f, :maat %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= form_for @conn, Routes.products_path(@conn, :show_kleur), fn f -> %>
+  <div class="form-group">
+    <%= label f, gettext "kleur" %>
+    <%= text_input f, :kleur %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= gettext "Title"%></th>
+      <th><%= gettext "Description"%></th>
+      <th><%= gettext "Size"%></th>
+      <th><%= gettext "Color"%></th>
+      <th><%= gettext "Price"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for products <- @products do %>
+    <tr>
+      <td><%= products.title %></td>
+      <td><%= products.description %></td>
+      <td><%= products.size %></td>
+      <td><%= products.color %></td>
+      <td><%= products.price %></td>
+
+      <td>
+        <span><%= link gettext("Show"), to: Routes.products_path(@conn, :show_user, products) %></span>
+        <span><%= link gettext("add"), to: Routes.winkelkar_path(@conn, :add_to_cart, id: products.id) %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

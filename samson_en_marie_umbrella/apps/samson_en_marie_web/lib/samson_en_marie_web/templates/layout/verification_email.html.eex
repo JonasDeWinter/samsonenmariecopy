@@ -1,0 +1,8 @@
+<h1> <%= gettext "verificate email" %></h1>
+
+
+<%= form_for @conn, Routes.email_verification_path(@conn, :update, @user.verification_token), [class: "elixircasts-form"], fn f -> %>
+  <div>
+    <%= submit gettext "Save" %>
+  </div>
+<% end %>

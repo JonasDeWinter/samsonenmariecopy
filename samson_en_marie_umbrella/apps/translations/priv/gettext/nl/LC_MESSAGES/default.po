@@ -1,0 +1,450 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:27
+#: lib/samson_en_marie_web/templates/user/index.html.eex:37
+msgid "Are you sure?"
+msgstr "ben je zeker"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/edit.html.eex:5
+#: lib/samson_en_marie_web/templates/products/new.html.eex:5 lib/samson_en_marie_web/templates/products/show.html.eex:33
+#: lib/samson_en_marie_web/templates/user/edit.html.eex:5 lib/samson_en_marie_web/templates/user/new.html.eex:5
+#: lib/samson_en_marie_web/templates/user/show.html.eex:62
+msgid "Back"
+msgstr "terug"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:27
+#: lib/samson_en_marie_web/templates/user/index.html.eex:37
+msgid "Delete"
+msgstr "verwijder"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:26
+#: lib/samson_en_marie_web/templates/products/show.html.eex:32 lib/samson_en_marie_web/templates/user/index.html.eex:36
+#: lib/samson_en_marie_web/templates/user/show.html.eex:61
+msgid "Edit"
+msgstr "aanpassen"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:26
+msgid "English"
+msgstr "Engels"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/index.html.eex:1
+msgid "Listing users"
+msgstr "Lijst van gebruikers"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:22
+msgid "Manager scope"
+msgstr "manager scope"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/index.html.eex:44
+#: lib/samson_en_marie_web/templates/user/new.html.eex:1
+msgid "New User"
+msgstr "nieuwe gebruiker"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/email_verification/edit.html.eex:6
+msgid "New password confirmation"
+msgstr "nieuwe wachtwoord confirmatie"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/form.html.eex:4
+#: lib/samson_en_marie_web/templates/user/form.html.eex:4
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "oeps, er ging iets mis! check aub de errors hieronder"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/email_verification/edit.html.eex:12
+#: lib/samson_en_marie_web/templates/layout/verification_email.html.eex:6 lib/samson_en_marie_web/templates/products/form.html.eex:29
+#: lib/samson_en_marie_web/templates/user/form.html.eex:47
+msgid "Save"
+msgstr "opslaan"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/email_verification/new.html.eex:9
+msgid "Send email verification link"
+msgstr "stuur email verification link"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:25
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:25 lib/samson_en_marie_web/templates/user/index.html.eex:35
+msgid "Show"
+msgstr "tonen"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:21
+msgid "User scope"
+msgstr "gebruiker scope"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/page/index.html.eex:2
+msgid "Welcome to %{name}!"
+msgstr "Welkom %{name}!"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:23
+msgid "admin scope"
+msgstr "admin scope"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:28
+#: lib/samson_en_marie_web/templates/user/index.html.eex:11
+msgid "city"
+msgstr "stad"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:33
+msgid "city:"
+msgstr "stad"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:24
+#: lib/samson_en_marie_web/templates/user/index.html.eex:10
+msgid "country"
+msgstr "land"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:28
+msgid "country:"
+msgstr "land"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:27
+msgid "dutch"
+msgstr "Nederlands"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/session/new.html.eex:7
+#: lib/samson_en_marie_web/templates/user/form.html.eex:16 lib/samson_en_marie_web/templates/user/index.html.eex:8
+msgid "email"
+msgstr "email"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:18
+msgid "email:"
+msgstr "email"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:8
+#: lib/samson_en_marie_web/templates/user/index.html.eex:6
+msgid "first name"
+msgstr "voornaam"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:8
+msgid "first name:"
+msgstr "voornaam"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:16
+msgid "home"
+msgstr "home"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:40
+#: lib/samson_en_marie_web/templates/user/index.html.eex:14
+msgid "home number"
+msgstr "huisnummer"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:48
+msgid "house number:"
+msgstr "huisnummer"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:12
+#: lib/samson_en_marie_web/templates/user/index.html.eex:7
+msgid "last name"
+msgstr "achternaam"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:13
+msgid "last name:"
+msgstr "achternaam"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:19
+msgid "login"
+msgstr "log in"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/session/new.html.eex:2
+msgid "login page"
+msgstr "login pagina"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:20
+msgid "logout"
+msgstr "log uit"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/session/new.html.eex:13
+#: lib/samson_en_marie_web/templates/user/form.html.eex:20 lib/samson_en_marie_web/templates/user/index.html.eex:9
+msgid "password"
+msgstr "wachtwoord"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:23
+msgid "password:"
+msgstr "wachtwoord"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/index.html.eex:12
+msgid "postal code"
+msgstr "postcode"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:38
+msgid "postal code:"
+msgstr "postcode"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:32
+msgid "postal number"
+msgstr "postcode"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/index.html.eex:15
+msgid "role"
+msgstr "rol"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:53
+msgid "role:"
+msgstr "rol"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/form.html.eex:36
+#: lib/samson_en_marie_web/templates/user/index.html.eex:13
+msgid "street"
+msgstr "straat"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/show.html.eex:43
+msgid "street:"
+msgstr "straat"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/session/new.html.eex:19
+msgid "submit"
+msgstr "versturen"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:18
+msgid "users"
+msgstr "gebruikers"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/user/index.html.eex:16
+msgid "validated?"
+msgstr "gevalideerd?"
+
+#, elixir-format
+#: lib/samson_en_marie/user_context.ex:50
+msgid "password is wrong dumbass"
+msgstr "wachtwoord is fout dommerik"
+
+#, elixir-format
+#: lib/samson_en_marie/user_context.ex:44
+msgid "that username does not exists"
+msgstr "de username bestaat niet"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/user_controller.ex:33
+msgid "User created successfully."
+msgstr "gebruiker succesvol aangemaakt"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/user_controller.ex:61
+msgid "User updated successfully."
+msgstr "gebruiker succesvol upgedate"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/user_controller.ex:74
+msgid "user deleted successfully."
+msgstr "gebruiker succesvol verwijderd"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/email_verification_controller.ex:31
+msgid "validation token expired check new email"
+msgstr "token is vervallen er is een nieuwe mail gestuurd"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/session_controller.ex:35
+msgid "welcome back"
+msgstr "welkom terug"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/email_verification_controller.ex:24
+msgid "your email has been validated"
+msgstr "uw email is gevalideerd"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/app.html.eex:17
+msgid "register"
+msgstr "aanmelden"
+
+#, elixir-format
+#: lib/samson_en_marie/email.ex:11
+msgid "Email verification for our website"
+msgstr "Email verificatie voor onze website"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/layout/verification_email.html.eex:1
+msgid "verificate email"
+msgstr "Verifieer email"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/products_controller.ex:31
+msgid "Products created successfully."
+msgstr "Product succesvol upgedate"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/products_controller.ex:74
+msgid "Products deleted successfully."
+msgstr "Product succesvol verwijderd"
+
+#, elixir-format
+#: lib/samson_en_marie_web/controllers/products_controller.ex:61
+msgid "Products updated successfully."
+msgstr "Product succesvol gewijzigd"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/edit.html.eex:1
+msgid "Edit Products"
+msgstr "Bewerk producten"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/show.html.eex:21
+msgid "Color:"
+msgstr "kleur"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/show.html.eex:11
+msgid "Description:"
+msgstr "omschrijving"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/show.html.eex:26
+msgid "Price:"
+msgstr "prijs"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/show.html.eex:16
+msgid "Size:"
+msgstr "Maat"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/form.html.eex:20
+msgid "color"
+msgstr "kleur"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/form.html.eex:12
+msgid "description"
+msgstr "omschrijving"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/form.html.eex:24
+msgid "price"
+msgstr "prijs"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/form.html.eex:16
+msgid "size"
+msgstr "Maat"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/form.html.eex:8
+msgid "title"
+msgstr "titel"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/show.html.eex:1
+#: lib/samson_en_marie_web/templates/products/usershow.html.eex:1
+msgid "Show Products"
+msgstr "Overzicht proucten"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:9
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:9
+msgid "Color"
+msgstr "kleur"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:7
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:7
+msgid "Description"
+msgstr "omschrijving"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:1
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:1
+msgid "Listing Products"
+msgstr "Overzicht producten"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:10
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:10
+msgid "Price"
+msgstr "prijs"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:8
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:8
+msgid "Size"
+msgstr "Maat"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:6
+#: lib/samson_en_marie_web/templates/products/userindex.html.eex:6
+msgid "Title"
+msgstr "titel"
+
+#, elixir-format
+#: lib/samson_en_marie_web/templates/products/index.html.eex:34
+#: lib/samson_en_marie_web/templates/products/new.html.eex:1
+msgid "New Product"
+msgstr "Nieuw product"
+
+#, elixir-format, fuzzy
+#: lib/samson_en_marie_web/templates/products/usershow.html.eex:11
+msgid "Description: "
+msgstr "omschrijving"
+
+#, elixir-format, fuzzy
+#: lib/samson_en_marie_web/templates/products/usershow.html.eex:26
+msgid "Price: "
+msgstr "prijs"
+
+#, elixir-format, fuzzy
+#: lib/samson_en_marie_web/templates/products/usershow.html.eex:6
+msgid "Title: "
+msgstr "titel"
+
+#, elixir-format, fuzzy
+#: lib/samson_en_marie_web/templates/products/usershow.html.eex:21
+msgid "color: "
+msgstr "kleur"
+
+#, elixir-format, fuzzy
+#: lib/samson_en_marie_web/templates/products/usershow.html.eex:16
+msgid "size: "
+msgstr "Maat"

@@ -1,0 +1,14 @@
+<%= form_for @changeset, Routes.email_verification_path(@conn, :update, @user.password_reset_token), [class: "elixircasts-form"], fn f -> %>
+  <%= label f, :encrypted_password, "New password" %>
+  <%= password_input f, :encrypted_password, required: true %>
+  <%= error_tag f, :encrypted_password %>
+
+  <%= label f, :encrypted_password_confirmation, gettext "New password confirmation" %>
+  <%= password_input f, :encrypted_password_confirmation, required: true %>
+  <br>
+  <%= error_tag f, :encrypted_password_confirmation %>
+
+  <div>
+    <%= submit gettext "Save" %>
+  </div>
+<% end %>

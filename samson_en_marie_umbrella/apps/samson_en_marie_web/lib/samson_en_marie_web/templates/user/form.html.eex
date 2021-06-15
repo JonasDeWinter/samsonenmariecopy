@@ -1,0 +1,49 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p><%= gettext "Oops, something went wrong! Please check the errors below." %> </p>
+    </div>
+  <% end %>
+
+  <%= label f, gettext "first name" %>
+  <%= text_input f, :voornaam %>
+  <%= error_tag f, :voornaam %>
+
+  <%= label f,gettext "last name" %>
+  <%= text_input f, :achternaam %>
+  <%= error_tag f, :achternaam %>
+
+  <%= label f, gettext "email"%>
+  <%= text_input f, :email %>
+  <%= error_tag f, :email %>
+
+  <%= label f, gettext "password" %>
+  <%= text_input f, :password %>
+  <%= error_tag f, :password %>
+
+  <%= label f, gettext "country" %>
+  <%= text_input f, :land %>
+  <%= error_tag f, :land %>
+
+  <%= label f, gettext "city"%>
+  <%= text_input f, :stad %>
+  <%= error_tag f, :stad %>
+
+  <%= label f, gettext "postal number" %>
+  <%= text_input f, :postcode %>
+  <%= error_tag f, :postcode %>
+
+  <%= label f,  gettext "street"%>
+  <%= text_input f, :straat %>
+  <%= error_tag f, :straat %>
+
+  <%= label f, gettext "home number"%>
+  <%= text_input f, :huisnr %>
+  <%= error_tag f, :huisnr %>
+
+
+
+  <div>
+    <%= submit gettext "Save" %>
+  </div>
+<% end %>

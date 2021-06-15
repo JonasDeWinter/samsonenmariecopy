@@ -1,0 +1,33 @@
+<h1><%= gettext "Show Products"%></h1>
+
+<ul>
+
+  <li>
+    <strong><%= gettext "Title: "%></strong>
+    <%= @products.title %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Description: "%></strong>
+    <%= @products.description %>
+  </li>
+
+  <li>
+    <strong><%= gettext "size: "%></strong>
+    <%= @products.size %>
+  </li>
+
+  <li>
+    <strong><%= gettext "color: "%></strong>
+    <%= @products.color %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Price: "%></strong>
+    <%= @products.price %>
+  </li>
+
+</ul>
+
+
+<span><%= link gettext("Back"), to: Routes.products_path(@conn, :index_user) %></span>

@@ -1,0 +1,34 @@
+<h1><%= gettext "Listing Products"%></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= gettext "Title"%></th>
+      <th><%= gettext "Description"%></th>
+      <th><%= gettext "Size"%></th>
+      <th><%= gettext "Color"%></th>
+      <th><%= gettext "Price"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for products <- @products do %>
+    <tr>
+      <td><%= products.title %></td>
+      <td><%= products.description %></td>
+      <td><%= products.size %></td>
+      <td><%= products.color %></td>
+      <td><%= products.price %></td>
+
+      <td>
+        <span><%= link gettext("Show"), to: Routes.products_path(@conn, :show, products) %></span>
+        <span><%= link gettext("Edit"), to: Routes.products_path(@conn, :edit, products) %></span>
+        <span><%= link gettext("Delete"), to: Routes.products_path(@conn, :delete, products), method: :delete, data: [confirm: gettext("Are you sure?")] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link gettext("New Product"), to: Routes.products_path(@conn, :new) %></span>

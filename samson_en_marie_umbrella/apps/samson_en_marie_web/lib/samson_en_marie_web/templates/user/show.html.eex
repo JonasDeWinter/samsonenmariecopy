@@ -1,0 +1,62 @@
+<h1>Show User</h1>
+
+<ul>
+
+
+
+  <li>
+    <strong><%= gettext "first name:"%></strong>
+    <%= @user.voornaam %>
+  </li>
+
+  <li>
+    <strong><%= gettext "last name:"%></strong>
+    <%= @user.achternaam %>
+  </li>
+
+  <li>
+    <strong><%= gettext "email:"%></strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong><%= gettext "password:"%></strong>
+    <%= @user.hashed_password %>
+  </li>
+
+  <li>
+    <strong><%= gettext "country:"%></strong>
+    <%= @user.land %>
+  </li>
+
+  <li>
+    <strong><%= gettext "city:"%></strong>
+    <%= @user.stad %>
+  </li>
+
+  <li>
+    <strong><%= gettext "postal code:"%></strong>
+    <%= @user.postcode %>
+  </li>
+
+  <li>
+    <strong><%= gettext "street:"%></strong>
+    <%= @user.straat %>
+  </li>
+
+  <li>
+    <strong><%= gettext "house number:"%></strong>
+    <%= @user.huisnr %>
+  </li>
+
+  <li>
+    <strong><%= gettext "role:"%></strong>
+    <%= @user.role %>
+  </li>
+
+
+
+</ul>
+
+<span><%= link gettext("Edit"), to: Routes.user_path(@conn, :edit, @user) %></span>
+<span><a href="<%= Routes.user_path(@conn, :index) %>"><%= gettext "back"%></a></span>

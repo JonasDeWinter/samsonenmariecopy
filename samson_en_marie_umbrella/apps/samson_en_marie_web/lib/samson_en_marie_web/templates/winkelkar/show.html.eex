@@ -1,0 +1,38 @@
+<h1>Show Winkelkar</h1>
+
+<ul>
+
+  <li>
+    <strong>Winkelkar:</strong>
+    <%= @winkelkar.id %>
+  </li>
+</ul>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>description</th>
+      <th>size</th>
+      <th>color</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+  <%= for product <- @winkelkar.products do %>
+      <tr>
+        <td><%= product.title %></td>
+        <td><%= product.description %></td>
+        <td><%= product.size %></td>
+        <td><%= product.color %></td>
+        <td><%= product.price %></td>
+        <td>
+        <span><%= link "Delete", to: Routes.winkelkar_path(@conn, :delete_product, %{id: product.id}), method: :delete_product, data: [confirm: "Are you sure?"] %></span></td>
+
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<span><%= link "betalen", to: Routes.winkelkar_path(@conn, :betalen) %></span>
+<span><%= link "Back", to: Routes.products_path(@conn, :index_user) %></span>
